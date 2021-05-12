@@ -1,7 +1,7 @@
 {{#extend "default" }}{{#content "body"}}
 		{{>navigation}}
 		<section>
-			<div class="container items-center px-5 pt-16 mx-auto lg:px-24">
+			<div class="container items-center px-5 pt-16 mx-auto md:px-12 lg:px-24">
 				<div class="flex flex-col w-full text-left">
 					<h1 class="text-2xl font-bold leading-none tracking-tighter text-white md:text-5xl lg:text-7xl">
 						<span
@@ -33,13 +33,12 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 		<section>
-			<div class="container flex flex-wrap items-start px-5 py-24 mx-auto md:px-10 lg:px-20">
+			<div class="container flex flex-wrap items-start px-5 py-24 mx-auto bg-gradient-to-tr from-blue-700 to-blue-900 md:px-12 lg:px-20">
 				<div class="flex flex-col w-full pt-0 mt-4 text-left lg:w-1/2 md:mb-0 lg:pr-16">
-					<h2 class="text-2xl font-bold leading-snug tracking-tighter text-gray-400 md:text-5xl">
+					<h2 class="text-2xl font-bold leading-snug tracking-tighter text-black md:text-5xl">
 						<span
 							class="tracking-tighter text-white">
 							maker.
@@ -52,21 +51,21 @@
 				<div class="flex flex-col w-full px-2 pt-0 mt-4 text-left lg:w-1/2 md:mb-0">
 					<div class="flex flex-wrap ">
 						<div class="w-full mb-4 lg:px-8 border-opacity-60">
-							<p class="mt-4 text-xl leading-relaxed text-gray-300 ">
+							<p class="mt-4 text-xl font-semibold leading-relaxed text-black ">
 								I started my tech adventure back in late 2018.</p>
-							<p class="mt-8 text-xl leading-relaxed text-gray-300 ">
+							<p class="mt-8 text-xl font-semibold leading-relaxed text-black ">
 								As a first project I made
 								<a href="https://www.colorsandfonts.com/" target="_blank"
 									class="text-white">colors
 									&amp; fonts</a>, I wanted to make small library of well, colours and fonts...
 							</p>
-							<p class="mt-4 text-xl leading-relaxed text-gray-300 ">
+							<p class="mt-4 text-xl font-semibold leading-relaxed text-black ">
 								After that I decided to send a newsletter.
 								<a href="https://www.unicornsfeed.com/" target="_blank"
 									class="text-white">TUF</a>
 								right now I am sending tutorials for developers and designers.
 							</p>
-							<p class="mt-4 text-xl leading-relaxed text-gray-300 ">
+							<p class="mt-4 text-xl font-semibold leading-relaxed text-black ">
 								I realized that I enjoyed to design and build stuff so I made.
 								<a href="https://www.wickedtemplates.com/" target="_blank"
 									class="text-white">
@@ -79,7 +78,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="container items-center px-5 pb-16 mx-auto lg:px-20">
+			<div class="container items-center px-5 py-16 mx-auto md:px-12 lg:px-20">
 				<div class="flex flex-col w-full">
 					<q
 						class="text-2xl font-light leading-none tracking-tighter text-white md:text-5xl lg:text-6xl">
@@ -89,27 +88,39 @@
 			</div>
 		</section>
 		<section class="overflow-hidden " id="projects">
-			<div class="container px-5 py-24 mx-auto lg:px-20">
+			<div class="container px-5 py-24 mx-auto md:px-12 lg:px-20">
 				<div class="-my-8 divide-y divide-warmGray-700">
-					<div class="flex flex-wrap md:flex-nowrap">
+					<div class="flex flex-wrap lg:flex-nowrap">
 						<div class="flex flex-col flex-shrink-0 pt-6 mb-6 md:w-64 md:mb-0">
 							<span
 								class="text-sm font-semibold tracking-widest text-white uppercase ">colorsandfonts</span>
 						</div>
 						<div class="w-full pt-4 lg:pr-12 md:flex-grow lg:w-2/3">
-							<h2 class="text-2xl font-light text-gray-300 lg:mb-24 lg:text-3xl">A collection of color and
+							<p class="text-2xl font-light text-warmGray-500 md:text-4xl lg:mb-24 lg:text-3xl">A collection of color and
 								typography
 								resources for Web Developers and Digital Designers to find inspiration.
-							</h2>
-
+							</p>
 						</div>
 						<div
-							class="content-center w-full border-t border-warmGray-700 lg:w-1/5 lg:border-l md:border-t-0">
-							<div class="p-6 mx-auto">
+							class="content-center w-full lg:border-l border-warmGray-700 lg:w-1/5 ">
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Visit
 								<a href="https://www.colorsandfonts.com/" target="_blank">
-									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-rose-400"
-										width="32" height="32" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg xmlns="http://www.w3.org/2000/svg" class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<circle cx="12" cy="12" r="9" />
+										<line x1="15" y1="9" x2="9" y2="15" />
+										<polyline points="15 15 15 9 9 9" />
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Case Study
+								<a href="./colorsandfonts.html">
+									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
 											fill="currentColor" />
@@ -121,24 +132,36 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex flex-wrap md:flex-nowrap">
+					<div class="flex flex-wrap lg:flex-nowrap">
 						<div class="flex flex-col flex-shrink-0 pt-6 mb-6 md:w-64 md:mb-0">
 							<span
 								class="text-sm font-semibold tracking-widest text-white uppercase ">wickedtemplates</span>
 						</div>
 						<div class="w-full pt-4 lg:pr-12 md:flex-grow lg:w-2/3">
-							<h2 class="text-2xl font-light text-gray-300 lg:mb-24 lg:text-3xl">Landing pages for your
+							<p class="text-2xl font-light text-warmGray-500 md:text-4xl lg:mb-24 lg:text-3xl">Landing pages for your
 								next project, made with Tailwind CSS and Next.js.
-							</h2>
-
+							</p>
 						</div>
 						<div
-							class="content-center w-full border-t border-warmGray-700 lg:w-1/5 lg:border-l md:border-t-0">
-							<div class="p-6 mx-auto">
+							class="content-center w-full lg:border-l border-warmGray-700 lg:w-1/5 ">
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Visit
 								<a href="https://www.wickedtemplates.com/" target="_blank">
-									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-rose-400"
-										width="32" height="32" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg xmlns="http://www.w3.org/2000/svg" class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<circle cx="12" cy="12" r="9" />
+										<line x1="15" y1="9" x2="9" y2="15" />
+										<polyline points="15 15 15 9 9 9" />
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Case Study
+								<a href="#" >
+									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
 											fill="currentColor" />
@@ -150,25 +173,36 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex flex-wrap md:flex-nowrap">
+					<div class="flex flex-wrap lg:flex-nowrap">
 						<div class="flex flex-col flex-shrink-0 pt-6 mb-6 md:w-64 md:mb-0">
 							<span
 								class="text-sm font-semibold tracking-widest text-white uppercase ">wickedblocks</span>
 						</div>
 						<div class="w-full pt-4 lg:pr-12 md:flex-grow lg:w-2/3">
-							<h2 class="text-2xl font-light text-gray-300 lg:mb-24 lg:text-3xl">
+							<p class="text-2xl font-light text-warmGray-500 md:text-4xl lg:mb-24 lg:text-3xl">
 								A collection of and components for Tailwind ready to copy paste on your next project.
-
-							</h2>
-
+							</p>
 						</div>
 						<div
-							class="content-center w-full border-t border-warmGray-700 lg:w-1/5 lg:border-l md:border-t-0">
-							<div class="p-6 mx-auto">
+							class="content-center w-full lg:border-l border-warmGray-700 lg:w-1/5 ">
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Visit
 								<a href="https://www.wickedblocks.dev/" target="_blank">
-									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-rose-400"
-										width="32" height="32" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg xmlns="http://www.w3.org/2000/svg" class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<circle cx="12" cy="12" r="9" />
+										<line x1="15" y1="9" x2="9" y2="15" />
+										<polyline points="15 15 15 9 9 9" />
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Case Study
+								<a href="#" >
+									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
 											fill="currentColor" />
@@ -180,25 +214,36 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex flex-wrap md:flex-nowrap">
+					<div class="flex flex-wrap lg:flex-nowrap">
 						<div class="flex flex-col flex-shrink-0 pt-6 mb-6 md:w-64 md:mb-0">
 							<span
 								class="text-sm font-semibold tracking-widest text-white uppercase ">tuf</span>
 						</div>
 						<div class="w-full pt-4 lg:pr-12 md:flex-grow lg:w-2/3">
-							<h2 class="text-2xl font-light text-gray-300 lg:mb-24 lg:text-3xl">
+							<p class="text-2xl font-light text-warmGray-500 md:text-4xl lg:mb-24 lg:text-3xl">
 								A bi-weekly newsletter sent on Wednesdays with 4 links about Front-End and UI/UX design.
-
-							</h2>
-
+							</p>
 						</div>
 						<div
-							class="content-center w-full border-t border-warmGray-700 lg:w-1/5 lg:border-l md:border-t-0">
-							<div class="p-6 mx-auto">
+							class="content-center w-full lg:border-l border-warmGray-700 lg:w-1/5 ">
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Visit
 								<a href="https://www.unicornsfeed.com/" target="_blank">
-									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-rose-400"
-										width="32" height="32" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg xmlns="http://www.w3.org/2000/svg" class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<circle cx="12" cy="12" r="9" />
+										<line x1="15" y1="9" x2="9" y2="15" />
+										<polyline points="15 15 15 9 9 9" />
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Case Study
+								<a href="#" >
+									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
 											fill="currentColor" />
@@ -210,27 +255,37 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex flex-wrap md:flex-nowrap">
+					<div class="flex flex-wrap lg:flex-nowrap">
 						<div class="flex flex-col flex-shrink-0 pt-6 mb-6 md:w-64 md:mb-0">
 							<span
 								class="text-sm font-semibold tracking-widest text-white uppercase ">30DOT</span>
 						</div>
 						<div class="w-full pt-4 lg:pr-12 md:flex-grow lg:w-2/3">
-							<h2 class="text-2xl font-light text-gray-300 lg:mb-24 lg:text-3xl">
+							<p class="text-2xl font-light text-warmGray-500 md:text-4xl lg:mb-24 lg:text-3xl">
 								Keep yourself accountable while learning Tailwind. Share your process on Twitter with
 								the hashtag.
-
-
-							</h2>
-
+							</p>
 						</div>
 						<div
-							class="content-center w-full border-t border-warmGray-700 lg:w-1/5 lg:border-l md:border-t-0">
-							<div class="p-6 mx-auto">
+							class="content-center w-full lg:border-l border-warmGray-700 lg:w-1/5 ">
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Visit
 								<a href="https://www.30daysoftailwindcss.com/" target="_blank">
-									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-rose-400"
-										width="32" height="32" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg xmlns="http://www.w3.org/2000/svg" class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<circle cx="12" cy="12" r="9" />
+										<line x1="15" y1="9" x2="9" y2="15" />
+										<polyline points="15 15 15 9 9 9" />
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Case Study
+								<a href="#" >
+									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
 											fill="currentColor" />
@@ -242,27 +297,37 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex flex-wrap md:flex-nowrap">
+					<div class="flex flex-wrap lg:flex-nowrap">
 						<div class="flex flex-col flex-shrink-0 pt-6 mb-6 md:w-64 md:mb-0">
 							<span
 								class="text-sm font-semibold tracking-widest text-white uppercase ">
 								Brutalist One</span>
 						</div>
 						<div class="w-full pt-4 lg:pr-12 md:flex-grow lg:w-2/3">
-							<h2 class="text-2xl font-light text-gray-300 lg:mb-24 lg:text-3xl">
+							<p class="text-2xl font-light text-warmGray-500 md:text-4xl lg:mb-24 lg:text-3xl">
 								A collection of website with brutalist design.
-
-
-							</h2>
-
+							</p>
 						</div>
 						<div
-							class="content-center w-full border-t border-warmGray-700 lg:w-1/5 lg:border-l md:border-t-0">
-							<div class="p-6 mx-auto">
+							class="content-center w-full lg:border-l border-warmGray-700 lg:w-1/5 ">
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Visit
 								<a href="https://www.brutalist.one/" target="_blank">
-									<svg class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-rose-400"
-										width="32" height="32" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
+									<svg xmlns="http://www.w3.org/2000/svg" class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<circle cx="12" cy="12" r="9" />
+										<line x1="15" y1="9" x2="9" y2="15" />
+										<polyline points="15 15 15 9 9 9" />
+									</svg>
+								</a>
+							</div>
+							<div class="inline-flex items-center gap-2 py-4 mx-auto text-white lg:p-6 ">
+								Case Study
+								<a href="#" >
+									<svg    class="text-white transition duration-500 ease-in-out lg:ml-auto hover:text-blue-600" width="32"
+										height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
 											fill="currentColor" />

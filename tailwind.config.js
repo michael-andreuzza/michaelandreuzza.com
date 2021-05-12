@@ -3,7 +3,11 @@ module.exports = {
   //mode: 'jit',
   //purge: ['./src/**/*.html'],
   theme: {
-     extend: {
+    extend: {
+        boxShadow: {
+        DEFAULT: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
+        thick: '0px 13px 40px rgb(0 0 0 / 30%), 0px 4px 4px rgb(0 0 0 / 20%)',
+      },
        borderWidth: {
         DEFAULT: '0.5px',
         '1': '1px',
@@ -67,6 +71,7 @@ module.exports = {
   '200': '#5F5F5F',
   '300': '#454545',
   '400': '#2C2C2C',
+  '500': '#111213',
   '500': '#121212',
 
 },

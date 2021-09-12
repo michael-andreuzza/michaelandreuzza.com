@@ -1,9 +1,16 @@
 const colors = require('tailwindcss/colors');
 module.exports = {
-  //mode: 'jit',
-  //purge: ['./src/**/*.html'],
+
+  mode: 'jit',
+ purge: ['./src/**/*.html'],
   theme: {
     extend: {
+      height: (theme) => ({
+        "screen/2": "50vh",
+        "screen/3": "calc(100vh / 3)",
+        "screen/4": "calc(100vh / 4)",
+        "screen/5": "calc(100vh / 5)",
+      }),
         boxShadow: {
         DEFAULT: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
         thick: '0px 13px 40px rgb(0 0 0 / 30%), 0px 4px 4px rgb(0 0 0 / 20%)',
@@ -13,74 +20,29 @@ module.exports = {
         '1': '1px',
 
       },
-       fontSize: {
-        xs: '0.75rem',
-        sm: '0.875rem',
-        base: '1rem',
-        lg: '1.125rem',
-        xl: '1.25rem',
-        '2xl': '1.5rem',
-        '3xl': '1.875rem',
-        '4xl': '2.25rem',
-        '5xl': '3rem',
-        '6xl': '4rem',
-        '7xl': '5rem',
-        '8xl': '6rem',
-        '9xl': '7rem',
-        '10xl': '8rem',
-        '11xl': '9rem',
-        '12xl': '10rem',
-        '13xl': '11rem',
-        '14xl': '12rem',
-        '15xl': '13rem',
-        '16xl': '14rem',
-        '17xl': '15rem',
-        '18xl': '16rem',
-        '19xl': '17rem',
-        '20xl': '18rem',
-      },
-      colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        black: colors.black,
-        white: colors.white,
-        warmGray: colors.warmGray,
-        gray: colors.coolGray,
-        coolGray: colors.coolGray,
-        blueGray: colors.blueGray,
-        red: colors.red,
-        orange: colors.orange,
-        amber: colors.amber,
-        yellow: colors.yellow,
-        lime: colors.lime,
-        green: colors.green,
-        emerald: colors.emerald,
-        teal: colors.teal,
-        cyan: colors.cyan,
-        lightBlue: colors.lightBlue,
-        blue: colors.blue,
-        indigo: colors.indigo,
-        violet: colors.violet,
-        purple: colors.purple,
-        pink: colors.pink,
-        fuchsia: colors.fuchsia,
-        rose: colors.rose,
-       mikeGray: {
-  '50': '#858585',
-  '100': '#787878',
-  '200': '#5F5F5F',
-  '300': '#454545',
-  '400': '#2C2C2C',
-  '500': '#111213',
-  '500': '#121212',
 
-},
+      colors: {
+
+
+
+        aluminium : '#868787',
+        jumbo : '#858585',
+        monsoon: '#787878',
+        chicago: '#5F5F5F',
+        charcoal : '#454545',
+        midnight: '#2C2C2C',
+        darko: '#222425',
+        jungle: '#1b1d1d',
+  bunker: '#111213',
+  onyx: '#121212',
+
+
 
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'], // Ensure fonts with spaces have " " surrounding it.
+       mono: ['"IBM Plex Mono"', "ui-monospace"], // Ensure fonts with spaces have " " surrounding it.
         sans: [
-          '"Inter"',
+          '"IBM Plex Sans"',
           'system-ui',
           '-apple-system',
           'BlinkMacSystemFont',
@@ -99,5 +61,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-scroll-snap'),
+    require('@tailwindcss/typography'),
+  ],
 }

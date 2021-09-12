@@ -1,0 +1,69 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div
+  class="fixed inset-0 overflow-hidden"
+  role="dialog"
+  aria-modal="true"
+  x-transition:enter="transition duration-300 ease-in-out"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition duration-300 ease-in-out"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  x-show="open"
+  @click="open = false"
+  @keydown.escape="about = false"
+>
+  <div class="absolute inset-0 overflow-hidden" @click.away="open = false">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="fixed inset-y-0 right-0 flex max-w-full pl-10 sm:pl-16">
+        <div class="w-screen max-w-sm">
+          <div class="flex flex-col h-screen overflow-y-scroll bg-jungle">
+            <!-- Main -->
+            <div class="justify-end hidden mt-5 ml-auto mr-5">
+              <button
+                type="button"
+                class="inline-flex items-center p-3 text-white border border-transparent rounded-full shadow-sm  hover:text-blue-500 focus:outline-none"
+              >
+                <!-- Heroicon name: outline/plus-sm -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="items-end content-end pt-12">
+              <div class="px-4 pt-5 pb-5 text-left sm:px-0 sm:pt-0">
+                <dl class="px-4 space-y-8 sm:px-6 sm:space-y-6">
+                  <div>
+                    <dt
+                      class="text-sm font-thin tracking-normal text-white  sm:w-40 sm:flex-shrink-0"
+                    >
+                      About
+                    </dt>
+                    <dd
+                      class="mt-4 text-base tracking-wide  text-aluminium font-extralight sm:col-span-2"
+                    >
+                      <p>
+                        I am a self-thought UI Designer that codes his own
+                        projects and enjoys to make products for developers and
+                        designers, then grow them to something meaningful.
+                      </p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

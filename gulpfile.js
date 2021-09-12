@@ -39,7 +39,7 @@ const paths = {
   css: {
     src: "./src/css/*.css",
     dist: "./dist/css/",
-    watch: "./src/css/**/*.css",
+    watch: ["./src/css/**/*.css", "./src/**/*.{html,hbs}"],
   },
   fonts: {
     src: "./src/fonts/**/*.{woff,woff2,eot,ttf,svg}",
@@ -47,9 +47,9 @@ const paths = {
     watch: "./src/fonts/**/*.{woff,woff2,eot,ttf,svg}",
   },
   images: {
-    src: ["./src/images/**/*.{jpg,jpeg,png,gif,tiff,svg}"],
+    src: ["./src/images/**/*.{jpg,jpeg,png,gif,tiff,svg,webp}"],
     dist: "./dist/images/",
-    watch: "./src/images/**/*.{jpg,jpeg,png,gif,svg,tiff}",
+    watch: "./src/images/**/*.{jpg,jpeg,png,gif,svg,tiff,webp}",
   },
 };
 

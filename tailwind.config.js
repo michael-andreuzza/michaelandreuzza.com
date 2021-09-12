@@ -5,6 +5,10 @@ module.exports = {
  purge: ['./src/**/*.html'],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        wickedtemplates: "url('../images/wickedtemplates.svg')",
+
+      }),
       height: (theme) => ({
         "screen/2": "50vh",
         "screen/3": "calc(100vh / 3)",

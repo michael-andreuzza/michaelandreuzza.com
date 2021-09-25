@@ -38,6 +38,7 @@
     "tailwindcss-scroll-snap": "^1.1.0"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.1"
+    "@tailwindcss/typography": "^0.4.1",
+    "@victoryoalli/alpinejs-moment": "^1.0.0"
   }
 }

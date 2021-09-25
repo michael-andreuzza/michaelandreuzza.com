@@ -17,7 +17,7 @@ module.exports = {
       }),
         boxShadow: {
         DEFAULT: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
-        thick: '0px 13px 40px rgb(0 0 0 / 30%), 0px 4px 4px rgb(0 0 0 / 20%)',
+        thick: 'rgba(0, 0, 0, 0.3) 0px 13px 40px, rgba(0, 0, 0, 0.2) 0px 4px 4px;',
       },
        borderWidth: {
         DEFAULT: '0.5px',
@@ -29,7 +29,12 @@ module.exports = {
 
 
 
+        gossip: '#9cd976',
+
+
+        lilac : '#ededed',
         aluminium : '#868787',
+        mercury : '#818181',
         jumbo : '#858585',
         monsoon: '#787878',
         chicago: '#5F5F5F',
@@ -37,16 +42,16 @@ module.exports = {
         midnight: '#2C2C2C',
         darko: '#222425',
         jungle: '#1b1d1d',
-  bunker: '#111213',
-  onyx: '#121212',
+        bunker: '#111213',
+        onyx: '#171717',
 
 
 
       },
       fontFamily: {
-       mono: ['"IBM Plex Mono"', "ui-monospace"], // Ensure fonts with spaces have " " surrounding it.
+
         sans: [
-          '"IBM Plex Sans"',
+          'Inter',
           'system-ui',
           '-apple-system',
           'BlinkMacSystemFont',
@@ -63,7 +68,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {    },
   },
   plugins: [
     require('tailwindcss-scroll-snap'),

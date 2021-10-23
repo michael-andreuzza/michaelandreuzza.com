@@ -31,9 +31,10 @@ module.exports = {
         royal: '#3f4ee4',
         palatino: '#2f3ee3',
         leblue: '#1d2ee0',
+        persian: '#1b2ace',
 
 
-        
+
         ebony: '#050722',
         tiara: '#bfd3d6',
         smoke: "#f0f0f0",

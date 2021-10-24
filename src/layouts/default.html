@@ -20,29 +20,11 @@
 
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
-    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script>
-    <script>
-      let btn = document.getElementById("btn");
-      let page = document.getElementById("page");
+      defer>
+  </script>
 
-      btn.addEventListener("click", function () {
-        html2PDF(page, {
-          jsPDF: {
-            format: "a4",
-          },
-          html2canvas: {
-            scrollX: 0,
-            scrollY: -window.scrollY,
-          },
 
-          imageType: "image/jpeg",
-          output: "Michael-Andreuzza-Resume.pdf",
-        });
-      });
-    </script>
+
+
   </body>
 </html>

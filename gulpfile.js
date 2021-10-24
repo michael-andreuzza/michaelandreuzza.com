@@ -47,9 +47,9 @@ const paths = {
     watch: "./src/fonts/**/*.{woff,woff2,eot,ttf,svg}",
   },
   images: {
-    src: ["./src/images/**/*.{jpg,jpeg,png,gif,tiff,svg,webp}"],
+    src: ["./src/images/**/*.{jpg,jpeg,png,gif,tiff,svg,webp,pdf,zip}"],
     dist: "./dist/images/",
-    watch: "./src/images/**/*.{jpg,jpeg,png,gif,svg,tiff,webp}",
+    watch: "./src/images/**/*.{jpg,jpeg,png,gif,svg,tiff,webp,pdf,zip}",
   },
 };
 

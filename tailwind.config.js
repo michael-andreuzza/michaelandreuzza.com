@@ -1,44 +1,31 @@
-const colors = require('tailwindcss/colors');
+
 module.exports = {
-  mode: 'jit',
-  dark: 'media',
-  purge: ['./src/**/*.html'],
+
+  content: ['./src/**/*.html'],
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        wickedtemplates: "url('../images/wickedtemplates.svg')",
-      }),
-      height: (theme) => ({
-        "screen/2": "50vh",
-        "screen/3": "calc(100vh / 3)",
-        "screen/4": "calc(100vh / 4)",
-        "screen/5": "calc(100vh / 5)",
+        templatesHero: "url('../images/layout/templatesHero.png')",
+        templatesMobile: "url('../images/projects/wickedtemplates.png')",
+        cafHero: "url('../images/layout/cafHero.png')",
+        cafMobile: "url('../images/projects/caf.png')",
+        blocksHero: "url('../images/layout/blocksHero.png')",
+        blocksMobile: "url('../images/projects/blocks.png')",
+        serendipityHero: "url('../images/layout/serendipityHero.png')",
+        serendipityMobile: "url('../images/projects/serendipity.png')",
       }),
       boxShadow: {
         DEFAULT: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
         thick: 'rgba(0, 0, 0, 0.3) 0px 13px 40px, rgba(0, 0, 0, 0.2) 0px 4px 4px;',
       },
-      borderWidth: {
-        DEFAULT: '0.5px',
-        '1': '1px',
-      },
       colors: {
-        gossip: '#9cd976',
-
-        water: '#dcdefa',
-        perano: '#b8bef5',
-        slate: '#636eea',
-        royal: '#3f4ee4',
-        palatino: '#2f3ee3',
-        leblue: '#1d2ee0',
-        persian: '#1b2ace',
+        peel: '#faaa00',
 
 
-
-        ebony: '#050722',
-        tiara: '#bfd3d6',
+        tiara: '#cfdadc',
         smoke: "#f0f0f0",
         santa: "#a0a1b2",
+
         comet: "#5b617a",
         bay: "#50566c",
         river: "#464a5d",
@@ -48,10 +35,15 @@ module.exports = {
         cinder: "#252731",
         pearl: "#1e2028",
         mirage: "#1a1c23",
+        ship: "#808080",
+        shark: "#26282b",
+        whale: "#1f2123",
       },
       fontFamily: {
+        serif: ['"IBM Plex Serif"', "Lucida Bright"], // Ensure fonts with spaces have " " surrounding it.
+        mono: ['"IBM Plex Mono"', "ui-monospace"], // Ensure fonts with spaces have " " surrounding it.
         sans: [
-          'Inter',
+          '"IBM Plex Sans"',
           'system-ui',
           '-apple-system',
           'BlinkMacSystemFont',
@@ -72,7 +64,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tailwindcss-scroll-snap'),
+
     require('@tailwindcss/typography'),
   ],
 }

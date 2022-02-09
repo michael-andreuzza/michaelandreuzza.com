@@ -1,4 +1,168 @@
 @tailwind base;
 @tailwind components;
+.m-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 16.5px;
+  z-index: 10000;
+}
+.m-modal p,
+.m-modal span,
+.m-modal strong,
+.m-modal a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+
+  text-rendering: optimizeLegibility;
+}
+.m-modal strong {
+  font-weight: 700;
+}
+.m-modal .m-modal-back {
+  position: absolute;
+  z-index: 10001;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #20232a;
+  opacity: 0.8;
+}
+.m-modal .m-modal-content {
+  position: relative;
+  z-index: 10002;
+  box-sizing: content-box;
+  text-align: center;
+  overflow: hidden;
+  min-width: 200px;
+  max-width: 240px;
+  background-color: #1e2028;
+  opacity: 0.95;
+
+  box-shadow: 0 3px 20px rgba(32, 35, 42, 0.5);
+  color: #626262;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 24px;
+  transition: 0.5s box-shadow;
+}
+.m-modal .m-modal-content:hover,
+.m-modal .m-modal-content:focus,
+.m-modal .m-modal-content:active {
+  opacity: 1;
+}
+.m-modal .m-modal-content .m-title {
+  margin-bottom: 8px;
+  overflow: hidden;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+}
+.m-modal .m-modal-content .m-details {
+  margin-bottom: 10px;
+}
+.m-modal .m-modal-content .m-details p {
+  white-space: pre-line;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.m-modal .m-modal-content a {
+  cursor: pointer;
+  padding: 10px;
+  color: #626262;
+  text-decoration: none;
+}
+.m-modal .m-modal-content a.m-gmail {
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-gmail:hover,
+.m-modal .m-modal-content a.m-gmail:focus,
+.m-modal .m-modal-content a.m-gmail:active {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-outlook {
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-outlook:hover,
+.m-modal .m-modal-content a.m-outlook:focus,
+.m-modal .m-modal-content a.m-outlook:active {
+   background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-yahoo {
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-yahoo:hover,
+.m-modal .m-modal-content a.m-yahoo:focus,
+.m-modal .m-modal-content a.m-yahoo:active {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-tg {
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-tg:hover,
+.m-modal .m-modal-content a.m-tg:focus,
+.m-modal .m-modal-content a.m-tg:active {
+   background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+.m-modal .m-modal-content a.m-wa {
+  color: #ffffff;
+}
+
+
+.
+.m-modal .m-modal-content a.m-default:hover,
+.m-modal .m-modal-content a.m-default:focus,
+.m-modal .m-modal-content a.m-default:active,
+.m-modal .m-modal-content a.m-copy:hover,
+.m-modal .m-modal-content a.m-copy:focus,
+.m-modal .m-modal-content a.m-copy:active {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #626262;
+}
+
+
+.m-modal .m-modal-content a.m-by {
+  font-size: 12px;
+  margin-top: 0.8rem;
+  padding: 5px;
+  color: #626262;
+  display: none;
+}
+.m-modal .m-modal-content a.m-by:hover,
+.m-modal .m-modal-content a.m-by:focus,
+.m-modal .m-modal-content a.m-by:active {
+  color: #626262;
+}
+.m-modal .m-modal-content .w-500 {
+  font-weight: 500;
+}
+
+
 
 @tailwind utilities;
+@font-face {
+  font-family: 'Machina';
+    src: url("../fonts/machina/NeueMachina-Ultralight.otf"); /* IE9 Compat Modes */
+    src: url("../fonts/machina/NeueMachina-Ultralight.eot") format('embedded-opentype'), /* IE6-IE8 */
+        url("../fonts/machina/NeueMachina-Ultralight.woff2") format('woff2'), /* Super Modern Browsers */
+        url("../fonts/machina/NeueMachina-Ultralight.woff") format('woff'); /* Pretty Modern Browsers */
+
+    font-weight: 400 !important;
+    font-style: normal;
+    font-display: swap;
+}

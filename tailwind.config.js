@@ -1,20 +1,13 @@
-
 module.exports = {
-
   content: ['./src/**/*.html'],
   theme: {
     extend: {
-
-
       colors: {
-
         black: "#1e2028",
       },
       fontFamily: {
-
-
         sans: [
-          'Machina',
+          '"Inter"',
           'system-ui',
           '-apple-system',
           'BlinkMacSystemFont',
@@ -27,12 +20,13 @@ module.exports = {
           '"Apple Color Emoji"',
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
-        ] // Ensure fonts with spaces have " " surrounding it.
+        ], // Ensure fonts with spaces have " " surrounding it.
+        
       },
     },
   },
-
   plugins: [
-
+    require('@tailwindcss/typography'),
+    // ...
   ],
 }

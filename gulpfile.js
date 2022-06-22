@@ -130,7 +130,8 @@ gulp.task("fonts", function () {
 // -------------------------------------
 gulp.task("images", function () {
   return gulp
-    //.src(paths.images.src)
+    .src(paths.images.src)
+    //comment this line to for easy deploy
     //.pipe(gulpif(isProduction, imagemin()))
     .pipe(gulp.dest(paths.images.dist));
 });

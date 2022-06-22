@@ -2,9 +2,10 @@ module.exports = {
   content: ['./src/**/*.html'],
   theme: {
     extend: {
-      
+
       colors: {
-        black: "#1e2028",
+        black: "#0d0d0d",
+        white: "#f1f0e4",
       },
       fontFamily: {
         sans: [
